@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic operations</title>
+    <script type="text/javascript">  
+      function multiply(){  
+         a=Number(document.calculator.number1.value);  
+         b=Number(document.calculator.number2.value);  
+         c=a*b;  
+         document.calculator.total.value=c;  
+         }  
+        </script>  
+          
+        <script  type="text/javascript">  
+         function addition(){  
+           a=Number(document.calculator.number1.value);  
+           b=Number(document.calculator.number2.value);  
+           c=a+b;  
+           document.calculator.total.value=c;  
+           }  
+        </script>  
+          
+        <script type="text/javascript">  
+         function subtraction(){  
+           a=Number(document.calculator.number1.value);  
+           b=Number(document.calculator.number2.value);  
+           c=a-b;  
+           document.calculator.total.value=c;  
+           }  
+        </script>  
+          
+        <script type="text/javascript">  
+          function division(){  
+            a=Number(document.calculator.number1.value);  
+            b=Number(document.calculator.number2.value);  
+            c=a/b;  
+            document.calculator.total.value=c;  
+            }  
+        </script>  
+          
+        <script type="text/javascript">  
+         function modulus(){  
+          a=Number(document.calculator.number1.value);  
+          b=Number(document.calculator.number2.value);  
+          c=a%b;  
+          document.calculator.total.value=c;  
+          }  
+        </script>  
+    </head>
+<body>
+    <form name="calculator"> 
+         ENTER FIRST NUMBER: <input type="text" name="number1">   
+         ENTER SECOND NUMBER: <input type="text" name="number2">
+        Get Result: <input type="text" name="total">
+          <input type="button" value="ADD" onclick="javascript:addition();">  
+          <input type="button" value="SUB" onclick="javascript:subtraction();">  
+          <input type="button" value="MUL" onclick="javascript:multiply();">  
+          <input type="button" value="DIV" onclick="javascript:division();">  
+          <input type="button" value="MOD" onclick="javascript:modulus();">  
+  
+</form>  
+
+</body>
+</html>
